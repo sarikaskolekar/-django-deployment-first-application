@@ -23,3 +23,4 @@ def add_movie_view(request):
 def list_movie_view(request):
     movies_list=Movies.objects.all().order_by('-rating') #(-)desc-order
     return render(request,'MovieApp/listmovie.html',{'movies_list':movies_list})
+
